@@ -1,0 +1,87 @@
+body{
+    width:100%;
+    margin:0;
+}
+p,h3,h4,h6{
+    margin:0;
+    padding:0;
+}
+img{
+    vertical-align: bottom;
+}
+.lf{
+    float:left;
+}
+.rt{
+    float:right;
+}
+.clear{
+    content:"";
+    display:block;
+    clear:both;
+}
+/*总体布局*/
+#city-change{
+    width:100%;
+    background:#fff;
+    margin:0 auto;
+}
+/*loge布局*/
+#container div.loge{
+    width:35%;
+    margin:4% auto 1%;
+    position:relative;
+}
+#container div.loge img{
+    width:30%;
+}
+#container div.loge h3{
+    border-bottom:2px solid #47AA35;
+    color:#47AA35;
+    font-size:24px;
+    position:absolute;
+    top:40%;
+    right:15%;
+    font-weight:bold;
+}
+/*城市选择*/
+#change{
+    border-top:4px solid #A4D49A;
+    border-bottom:4px solid #A4D49A;
+    background:#DAEED5;
+}
+#change div.col-xs-4 img{
+    width:90%;
+    margin-top:25%;
+}
+#change div h4,#change div h6{
+    color:#387A46;
+}
+#change div h4{
+    margin-top:40px;
+}
+#change div h6{
+    border-bottom:2px solid #518B5F;
+    padding-top:5px;
+    padding-bottom:10px;
+}
+#change div.col-xs-8 div.col-xs-3 img{
+    width:90%;
+    margin:30% 0;
+}
+@media screen and (max-width:767px){
+    #container div.loge h3{
+        font-size:12px;
+    }
+    #change div h4{
+        font-size:12px;
+    }
+    #change div h6{
+        font-size:12px;
+    }
+}
+@media screen and (min-width:991px){
+    #container div.loge h3{
+        font-size:32px;
+    }
+}

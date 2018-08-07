@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="icon" href="images/img/icon.png"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>注册</title>
+    <style>
+        .main {
+            position: relative;
+        }
+        .bg-video {
+            position:absolute;
+            z-index: -1;
+            width: 100%;
+        }
+        .box {
+            width: 600px;
+            min-height: 400px;
+            background: rgba(255,255,255, .7);
+            border-radius: 5px;
+            margin: 100px auto;
+            padding: 1.5em;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+    <div class="container main">
+        <video class="bg-video" src="res/birds.mp4" autoplay loop muted></video>
+        <div class="box">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-2">
+                        <label class="control-label" for="uname">用户名：</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <input class="form-control" id="uname"
+                               placeholder="请输入您想注册的用户名">
+                    </div>
+                    <div class="col-sm-5">
+                        <span class="help-block">用户名可以包含数字或字母</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2">
+                        <label class="control-label" for="upwd">密码：</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <input class="form-control" id="upwd"
+                               placeholder="请输入您想注册的密码" type="password">
+                    </div>
+                    <div class="col-sm-5">
+                        <span class="help-block">密码长度在3~12位之间</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-2">
+                        <label class="control-label" for="upwd1">确认：</label>
+                    </div>
+                    <div class="col-sm-5">
+                        <input class="form-control" id="upwd1"
+                               placeholder="请输入您的确认密码" type="password">
+                    </div>
+                    <div class="col-sm-5">
+                        <span class="help-block"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-5 col-sm-offset-2">
+                        <input id="bt-register" class="btn btn-success btn-block" type="button" value="注册">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/register.js"></script>
+</body>
+</html>

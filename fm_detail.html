@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="icon" href="images/img/icon.png"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/details.css"/>
+    <style></style>
+    <title>生鲜详情页</title>
+</head>
+<body>
+    <div class="container">
+        <div id="header"></div>
+        <!-- 5、主体内容:main-->
+        <div id="main" class="row clear">
+            <!--1、面包屑导航-->
+            <div id="bread-crumb">
+                <a href="#">
+                    <b>生活用品</b>
+                </a>
+                <a href="#">清洁用品</a>
+                <span>&gt;</span>
+                <a href="#">衣物清洁</a>
+                <span>&gt;</span>
+                <a href="#">卫新洗衣液</a>
+            </div>
+            <!--2、产品介绍:图片和文本-->
+            <div id="product-intro">
+                <!--1、左：图像预览-->
+                <div id="preview">
+                    <!--上：产品大图-->
+                    <div id="mediumDiv">
+                        <img id="mImg" src="images/detail/products/product-s1-m.jpg"/>
+                        <div id="mask"></div>
+                        <div id="superMask"></div>
+                    </div>
+                    <div id="largeDiv"></div>
+                    <!--下：小图列表-->
+                    <h1>
+                        <a class="backward disabled"></a>
+                        <a class="forward"></a>
+                        <ul id="icon_list">
+                            <li><img src="images/detail/products/product-s1.jpg" /></li>
+                            <li><img src="images/detail/products/product-s2.jpg" /></li>
+                            <li><img src="images/detail/products/product-s3.jpg" /></li>
+                            <li><img src="images/detail/products/product-s4.jpg" /></li>
+                            <li><img src="images/detail/products/product-s1.jpg" /></li>
+                            <li><img src="images/detail/products/product-s2.jpg" /></li>
+                            <li><img src="images/detail/products/product-s3.jpg" /></li>
+                            <li><img src="images/detail/products/product-s4.jpg" /></li>
+                        </ul>
+                        <a class="next"></a>
+                    </h1>
+                </div>
+                <!--2、右：文字信息-->
+                <div id="detail">
+                    <h2>卫新薰衣草洗衣液4.26KG</h2>
+                    <b></b>
+                    <ul id="summary">
+                        <li id="summary-price">
+                            <p>商品价格：</p>
+                            <div>
+                                <span>&yen;</span><h3>39.9</h3><p>/瓶</p>
+                            </div>
+                        </li>
+                        <li>
+                            <p>市场价:</p>
+                            <div>&yen;42.00/瓶</div>
+                            <b></b>
+                        </li>
+                        <li>
+                            <p>商品评分：</p>
+                            <div>
+                                <span class="star star5"></span>
+                                <a href="#">(已有47662人评价)</a>
+                            </div>
+                        </li>
+                        <li id="summary-shop">
+                            <a href="#">
+                                <p>换购</p><span>【全场】满49元即可参加超值换购</span>
+                            </a>
+                        </li>
+                        <li id="summary-time">
+                            <p><span class="glyphicon glyphicon glyphicon-time"></span>此商品当日23:59:59前下单，可明日送达；
+                                超过时间可后日送达</p>
+                        </li>
+                        <li id="summary-pro">
+                            <p><span class="glyphicon glyphicon glyphicon-ok-circle"></span>自提免运费</p>
+                            <p><span class="glyphicon glyphicon glyphicon-ok-circle"></span>限时配送</p>
+                            <p><span class="glyphicon glyphicon glyphicon-ok-circle"></span>轻松退</p>
+                            <b></b>
+                        </li>
+                        <li id="summary-cart">
+                            <button>-</button><input type="text" value="1"/><button>+</button>
+                            <button>加入购物车</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--3、左侧浮动栏-->
+            <div id="lf-product">
+                <!--1、相关分类-->
+                <div id="related-sorts">
+                    <p>相关分类</p>
+                    <ul>
+                        <li>
+                            <a href="#">衣物清洁</a>
+                        </li>
+                        <li>
+                            <a href="#">纸品</a>
+                        </li>
+                        <li>
+                            <a href="#">湿巾</a>
+                        </li>
+                        <li>
+                            <a href="#">家庭清洁</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--2、最终购买-->
+                <div id="view-buy">
+                    <p>浏览了该商品的用户最终购买</p>
+                    <div>
+                        <dl>
+                            <dt>
+                                <a href="#">
+                                    <img src="images/detail/left_01.png"/>
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href="#">卫新护色洗衣液2KG袋装</a>
+                            </dd>
+                            <dd>&yen;22.90</dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#">
+                                    <img src="images/detail/left_02.png"/>
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href="#">卫新护色洗衣液2KG袋装</a>
+                            </dd>
+                            <dd>&yen;22.90</dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#">
+                                    <img src="images/detail/left_03.png"/>
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href="#">卫新护色洗衣液2KG袋装</a>
+                            </dd>
+                            <dd>&yen;22.90</dd>
+                        </dl>
+                        <dl>
+                            <dt>
+                                <a href="#">
+                                    <img src="images/detail/left_04.png"/>
+                                </a>
+                            </dt>
+                            <dd>
+                                <a href="#">卫新护色洗衣液2KG袋装</a>
+                            </dd>
+                            <dd>&yen;22.90</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!--4、右侧产品详细描述-->
+            <div id="rt-product">
+                <!--1、优惠套装-->
+                <div id="fav-suit">
+                    <p class="mt">优惠套装</p>
+                    <div>
+                        <!--1、主产品-->
+                        <div class="master">
+                            <span class="add"></span>
+                            <a href="#">
+                                <img src="images/detail/fav_01.jpg">
+                            </a>
+                            <p>
+                                <a href="#">卫新 薰衣草洗衣液 4.26kg</a>
+                            </p>
+                        </div>
+                        <!--2、套装产品-->
+                        <ul>
+                            <li>
+                                <span class="add"></span>
+                                <a href="#">
+                                    <img src="images/detail/fav_02.jpg">
+                                </a>
+                                <p>
+                                    <a href="#">卫新 薰衣草洗衣液 4.26kg</a>
+                                </p>
+                            </li>
+                            <li>
+                                <span class="add"></span>
+                                <a href="#">
+                                    <img src="images/detail/fav_03.jpg">
+                                </a>
+                                <p>
+                                    <a href="#">卫新 薰衣草洗衣液 4.26kg</a>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="images/detail/fav_04.jpg">
+                                </a>
+                                <p>
+                                    <a href="#">卫新 薰衣草洗衣液 4.26kg</a>
+                                </p>
+                            </li>
+                        </ul>
+                        <!--3、价格计算-->
+                    </div>
+                </div>
+                <!--2、商品介绍、规格参数等-->
+                <div id="product-details">
+                    <!--1、页签-->
+                    <ul class="mt">
+                        <li class="active">
+                            <a href="#">商品介绍</a>
+                        </li>
+                        <li>
+                            <a href="#">规格参数</a>
+                        </li>
+                        <li>
+                            <a href="#">商品评价</a>
+                        </li>
+                    </ul>
+                    <!--2、商品介绍-具体内容-->
+                    <div id="product-info">
+                        <!--1、文字列表-->
+                        <ul>
+                            <li>商品名称：卫新洗衣液</li>
+                            <li>商品编号：17486418741749</li>
+                            <li>规格参数：4.26KG</li>
+                            <li>商品产地：中国（详细见包装）</li>
+                            <li>品牌：卫新</li>
+                            <li>储存方式：常温</li>
+                            <li>截单时间：此商品当日23:59:59前下单，可明日送达；
+                                超过时间可后日送达</li>
+                        </ul>
+                        <!--2、图片信息-->
+                        <div class="detail-content">
+                            <p>
+                                <img src="images/detail/big_01.jpg">
+                            </p>
+                            <div>
+                                <span>产品特色</span>
+                                Selling Point
+                            </div>
+                            <p>
+                                <img src="images/detail/big_02.jpg">
+                            </p>
+                            <p>
+                                <img src="images/detail/big_03.jpg">
+                            </p>
+                            <div>
+                                <span>产品特色</span>
+                                Selling Point
+                            </div>
+                            <p>
+                                <img src="images/detail/big_04.jpg">
+                            </p>
+                            <div>
+                                <span>产品特色</span>
+                                Selling Point
+                            </div>
+                            <p>
+                                <img src="images/detail/big_05.jpg">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--3、商品评价-->
+                <div id="comment">
+                    <p class="mt">商品评价</p>
+                    <div>
+                        <!--1、97%-->
+                        <div class="rate">
+                            <b>97</b>
+                            <span>%</span>
+                            <p>好评度</p>
+                        </div>
+                        <!--2、比例-->
+                        <div class="percent">
+                            <dl>
+                                <dt>好评(97%)</dt>
+                                <dd>
+                                    <p style="width:97px;"></p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>中评(2%)</dt>
+                                <dd>
+                                    <p style="width:2px;"></p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt>差评(1%)</dt>
+                                <dd>
+                                    <p style="width:1px;"></p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--4、全部评价 -->
+                <div id="comment-list" class="clear">
+                    <!--1、页签-->
+                    <ul class="mt">
+                        <li class="active">
+                            <a href="#">全部评价</a>
+                        </li>
+                        <li>
+                            <a href="#">好评</a>
+                        </li>
+                        <li>
+                            <a href="#">中评</a>
+                        </li>
+                        <li>
+                            <a href="#">差评</a>
+                        </li>
+                    </ul>
+                    <!--2、具体评论内容-->
+                    <div id="comment-content">
+                        <!--1、评论内容1-->
+                        <div class="comment-item">
+                            <!--1、左：用户信息-->
+                            <ul>
+                                <li>
+                                    <img src="images/detail/users.jpg">
+                                </li>
+                                <li>
+                                    kkngj2008
+                                </li>
+                                <li>
+                                    <b>金牌会员</b>
+                                    广东
+                                </li>
+                            </ul>
+                            <!--2、右：评论内容-->
+                            <div class="comment-details">
+                                <div class="corner"></div>
+                                <!--1、五角星-->
+                                <div class="topic">
+                                    <span class="rt">2014-11-11 11:11:11</span>
+                                    <p class="star star5"></p>
+                                </div>
+                                <!--2、内容列表-->
+                                <ul>
+                                    <li>
+                                        <p>标签：</p>
+                                        <div>
+                                            <span>比洗衣粉好</span>
+                                            <span>去污能力强</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>心得：</p>
+                                        <div>
+                                            味道清香。。价格比较公道。。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>用户晒单：</p>
+                                        <div>
+                                            <img src="images/detail/comment_01.jpg">
+                                            <img src="images/detail/comment_02.jpg">
+                                            <img src="images/detail/comment_03.jpg">
+                                            共三张图片
+                                            <a href="#">查看晒单&gt;</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>购买日期：</p>
+                                        <div>2011-11-11</div>
+                                    </li>
+                                </ul>
+                                <!--3、俩按钮-->
+                                <div class="btns">
+                                    <button type="button">有用(3)</button>
+                                    <button type="button">回复(0)</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--2、评论内容2-->
+                        <div class="comment-item">
+                            <!--1、左：用户信息-->
+                            <ul>
+                                <li>
+                                    <img src="images/detail/users.jpg">
+                                </li>
+                                <li>
+                                    kkngj2008
+                                </li>
+                                <li>
+                                    <b>金牌会员</b>
+                                    广东
+                                </li>
+                            </ul>
+                            <!--2、右：评论内容-->
+                            <div class="comment-details">
+                                <div class="corner"></div>
+                                <!--1、五角星-->
+                                <div class="topic">
+                                    <span class="rt">2014-11-11 11:11:11</span>
+                                    <p class="star star5"></p>
+                                </div>
+                                <!--2、内容列表-->
+                                <ul>
+                                    <li>
+                                        <p>标签：</p>
+                                        <div>
+                                            <span>比洗衣粉好</span>
+                                            <span>去污能力强</span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>心得：</p>
+                                        <div>
+                                            味道清香。。价格比较公道。。
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>用户晒单：</p>
+                                        <div>
+                                            <img src="images/detail/comment_01.jpg">
+                                            <img src="images/detail/comment_02.jpg">
+                                            <img src="images/detail/comment_03.jpg">
+                                            共三张图片
+                                            <a href="#">查看晒单&gt;</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p>购买日期：</p>
+                                        <div>2011-11-11</div>
+                                    </li>
+                                </ul>
+                                <!--3、俩按钮-->
+                                <div class="btns">
+                                    <button type="button">有用(3)</button>
+                                    <button type="button">回复(0)</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!--3、评论内容n...-->
+                    </div>
+                    <!--3、页码-->
+                    <div id="pages">
+                        <p class="rt">
+                            <a class="active">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">...</a>
+                            <a href="#">3421</a>
+                            <a href="#">下一页</a>
+                        </p>
+                        <a href="#">[查看全部评价]</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/detail.js"></script>
+</body>
+</html>

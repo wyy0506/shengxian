@@ -1,0 +1,106 @@
+#plist{
+    margin-bottom:20px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+#plist ul{
+    width:1199px;
+}
+#plist ul li{
+    width: 224px;
+    height: 400px;
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px;
+    padding-top:10px;
+    border:1px solid transparent;
+}
+#plist ul li:hover{
+    border:1px solid #ddd;
+    box-shadow:2px 2px #eee;
+}
+#plist ul li img{
+    width:98%;
+    vertical-align: middle;
+    border:0;
+}
+#plist>ul>li>a:nth-child(2){
+    display:block;
+    font-size:14px;
+    height:20px;
+    margin:10px 0 5px 10px;
+    overflow:hidden;
+    color:#333;
+}
+#plist ul li span:nth-child(3){
+    font-size:15px;
+    margin:0 5px 0 10px;
+    font-weight:bold;
+    color:#FF3E3E;
+}
+#plist ul li div{
+    margin-left:10px;
+    margin-top:10px;
+}
+#plist ul li div a{
+    float:left;
+    width:60px;
+    height:30px;
+    line-height:30px;
+    border: 1px solid #DDD;
+    padding:0 3px;
+    padding-left:25px;
+    position: relative;
+    background: #fff;
+    color: #999;
+}
+#plist ul li div a.addcart{
+    width:110px;
+    text-align:center;
+    color: #e4393c;
+}
+#plist ul li div a i{
+    position:absolute;
+    left:5px;
+    top:5px;
+    background-image: url("../images/product/search.ele.png");
+    background-repeat: no-repeat;
+    background-position: 9999px 9999px;
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 0;
+}
+#plist ul li div a.p-operate i{
+    width:18px;
+    height:18px;
+    border:none;
+    background-position:0px -413px;
+}
+#plist ul li div a.addcart i{
+    top:3px;
+    width:25px;
+    height:22px;
+    border:none;
+    background-position: 0px -272px;
+}
+/*分页*/
+#plist.pager{
+    margin:15px;
+    float:right;
+}
+#plist .pager li a.active{
+    color:#FF8800;
+    cursor: default;
+    border:none;
+    background:#fff;
+}
+.active{
+    color:#FF8800;
+    cursor: default;
+    border:none;
+    background:#fff;
+}
